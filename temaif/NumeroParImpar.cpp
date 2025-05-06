@@ -27,6 +27,7 @@ int main()
     else
     {
         cout << "Invalid characters entered." << endl;
+        return 1;
     }
 
     return 0;
