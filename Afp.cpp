@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 /*Desarrolle un programa en c++ que solicite al usuario ingresar su salario mensual bruto y luego realice los siguientes calculos:
@@ -55,7 +54,7 @@ int main()
     // Calculamos ISSS
     if (salario <= 1000)
     {
-        descuentoISSS = salario * 0.03;
+        descuentoISSS = salario * 0.03; //Esto quivale a calcular el 3%
     }
     else
     {
@@ -63,7 +62,7 @@ int main()
     }
 
     // Calculamos AFP
-    descuentoAFP = salario * 0.0725;
+    descuentoAFP = salario * 0.0725; // Esto equivale al 7.25%
 
     // Salario neto después de ISSS y AFP
     salarioNeto = salario - descuentoISSS - descuentoAFP;
@@ -75,15 +74,15 @@ int main()
     }
     else if (salarioNeto <= 895.24) // Validamos el salario menor a 895.24 el descuento es de 10%
     {
-        descuentoRenta = (salarioNeto - 472.00) * 0.10;
+        descuentoRenta = (salarioNeto - 472.00) * 0.10; //Esto equivale al 10% 
     }
     else if (salarioNeto <= 2038.10) // Validamos el salario menor a 895.24 el descuento es de 20%
     {
-        descuentoRenta = (salarioNeto - 895.24) * 0.20;
+        descuentoRenta = (salarioNeto - 895.24) * 0.20; //Esto equivale al 20%
     }
-    else
+    else // Validamos el salario mayor a 2038.10 el descuento es de 30%
     {
-        descuentoRenta = (salarioNeto - 2038.10) * 0.30; // Validamos el salario menor a 895.24 el descuento es de 30%
+        descuentoRenta = (salarioNeto - 2038.10) * 0.30; //Esto equivale al 30%
     }
 
     // Apartado para calcular el salario final del usuario despues de descuentos
