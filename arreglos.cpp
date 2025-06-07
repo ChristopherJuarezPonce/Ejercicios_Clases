@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+
+// La suma de 5 elementos
+
 int main()
 {
     const int N = 5; // Tamaño fijo del arreglo
