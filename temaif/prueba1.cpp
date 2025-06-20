@@ -21,3 +21,5 @@ int main() {
 
     return 0;
 }
+
+// This code is a simple C++ program that calculates the sum of two integers.
